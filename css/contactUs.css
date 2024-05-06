@@ -1,0 +1,122 @@
+/* start contact us */
+/* start first box */
+h1 {
+  color: var(--title-color);
+}
+
+.contact .heading h1 {
+  font-size: 50px;
+}
+
+.contact .heading h1 span {
+  color: var(--button-color-span);
+}
+
+.contact .wrap {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contact .wrap .box:first-child {
+  padding: 50px;
+  display: grid;
+  gap: 50px;
+}
+
+.contact .wrap .box:first-child {
+  background: #362BA9;
+}
+
+.contact .wrap .box:last-child {
+  background: var(--background-card);
+}
+
+.contact .wrap .box .getInTouch {
+  font-weight: bold;
+}
+
+.contact .wrap .box .getInTouch h4 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+.contact .wrap .box .getInTouch p {
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.contact .wrap .box .mail,
+.contact .wrap .box .location,
+.contact .wrap .box .chat {
+  display: flex;
+  gap: 20px;
+  font-weight: bold;
+}
+
+.contact .wrap .box .social {
+  font-size: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+/* end first  box */
+/* start second box */
+
+.contact .wrap .box:last-child {
+  padding: 50px;
+}
+
+.contact .wrap .box .text {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact .wrap .box .text span {
+  color: var(--button-color-span);
+}
+
+.contact .wrap .box:last-child form {
+  display: grid;
+  gap: 50px;
+}
+
+.contact .wrap .box:last-child form .wrap {
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact .wrap .box:last-child form .wrap input,
+.contact .wrap .box:last-child form textarea {
+  height: 2.5rem;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  background: var(--background-card);
+  color: var(--text-color);
+  width: 100%;
+}
+
+.contact .wrap .box:last-child form textarea {
+  height: 250px;
+}
+
+.contact .wrap .box:last-child form button {
+  background: #362BA9;
+  color: hsl(0, 0%, 100%);
+  font-size: var(--normal-font-size);
+  border: 1px solid var(--background-card);
+  border-radius: 5px;
+  padding: 1rem 5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .contact .wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* end second box */
+/* end contact us */
